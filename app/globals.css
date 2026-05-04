@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+/* ============================= */
+/* 🌿 主题变量 */
+/* ============================= */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --card-bg: #ffffff;
+  --card-border: #eeeeee;
+}
+
+/* 🌙 暗黑模式 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card-bg: #111111;
+    --card-border: #222222;
+  }
+}
+
+/* ============================= */
+/* 🌿 基础样式 */
+/* ============================= */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* ============================= */
+/* 🔥 Tailwind（必须在中间） */
+/* ============================= */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================= */
+/* 🔥 导航 */
+/* ============================= */
+.nav-link {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+/* ============================= */
+/* 🔥 按钮 */
+/* ============================= */
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ============================= */
+/* 🔥 博客卡片 */
+/* ============================= */
+.card {
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-excerpt {
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.card-date {
+  color: #888;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* 🔥 文章页 */
+/* ============================= */
+.article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.article-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.article-date {
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.article-content {
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--foreground);
+}
+
+/* Markdown */
+.article-content h1 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.article-content h2 {
+  font-size: 22px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.article-content p {
+  margin-bottom: 16px;
+}
+
+/* 🔥 列表（关键） */
+.article-content ul {
+  padding-left: 24px;
+  margin-bottom: 16px;
+  list-style-type: disc;
+}
+
+.article-content li {
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+/* ============================= */
+/* 🔥 Hero（封面） */
+/* ============================= */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.6)
+  );
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 720px;
+  width: 100%;
+  padding: 0 20px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  opacity: 0.8;
+}
+
+/* ============================= */
+/* 🔥 Markdown（prose 修复） */
+/* ============================= */
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin: 0.25rem 0;
+}
