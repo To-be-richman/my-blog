@@ -123,6 +123,18 @@ export default function Footer() {
               </Link>
 
               <Link
+                href={`/${locale}/notes`}
+                className="
+                  text-white/70
+
+                  transition
+                  hover:text-cyan-300
+                "
+              >
+                {t("notes")}
+              </Link>
+
+              <Link
                 href={`/${locale}/about`}
                 className="
                   text-white/70
@@ -132,18 +144,6 @@ export default function Footer() {
                 "
               >
                 {t("about")}
-              </Link>
-
-              <Link
-                href={`/${locale}/contact`}
-                className="
-                  text-white/70
-
-                  transition
-                  hover:text-cyan-300
-                "
-              >
-                {t("contact")}
               </Link>
             </div>
           </div>

@@ -44,10 +44,16 @@
   },
 
   "About": {
-    "title": "關於",
+  "label": "ABOUT",
 
-    "description": "半導體產業的戰略主管，專注於科技、投資與全球策略。"
-  },
+  "title": "關於",
+
+  "headline": "關於市場、科技與人類行為",
+
+  "description": "一個長期觀察 AI、半導體、全球市場、流動性與人類心理的個人 Journal。",
+
+  "extra": "我長期關注全球流動性、AI 基礎設施、半導體產業與 Crypto Macro 的交叉變化，並嘗試從市場情緒與人類行為的角度理解這個脆弱時代。"
+},
 
   "Contact": {
     "title": "聯絡",
@@ -91,13 +97,13 @@
     "title": "相關文章"
   },
 
-  "Footer": {
-    "description": "探索市場、科技、投資與長期思維的高級 Journal。",
+"Footer": {
+  "description": "探索市場、科技、投資與長期思維的 Journal。",
 
-    "articles": "文章",
-    "about": "關於",
-    "contact": "聯絡"
-  },
+  "articles": "文章",
+  "notes": "市場筆記",
+  "about": "關於"
+},
 
   "Search": {
     "button": "搜尋",

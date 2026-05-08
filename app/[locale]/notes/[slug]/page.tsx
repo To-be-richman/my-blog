@@ -6,8 +6,6 @@ import matter from "gray-matter";
 
 import { marked } from "marked";
 
-import Image from "next/image";
-
 import { notFound } from "next/navigation";
 
 export default async function NotePage({
@@ -79,8 +77,6 @@ export default async function NotePage({
         className="
           relative
 
-          overflow-hidden
-
           border-b border-white/10
         "
       >
@@ -91,8 +87,8 @@ export default async function NotePage({
 
             bg-gradient-to-br
             from-black
-            via-black/80
-            to-cyan-950/20
+            via-black
+            to-cyan-950/10
           "
         />
 
@@ -106,8 +102,8 @@ export default async function NotePage({
 
             px-6
 
-            pt-40
-            pb-24
+            pt-36
+            pb-20
           "
         >
           {/* Category */}
@@ -144,23 +140,6 @@ export default async function NotePage({
             {data.title}
           </h1>
 
-          {/* Excerpt */}
-          <p
-            className="
-              mt-10
-
-              text-xl
-
-              leading-relaxed
-
-              text-white/60
-
-              max-w-3xl
-            "
-          >
-            {data.excerpt}
-          </p>
-
           {/* Date */}
           <p
             className="
@@ -176,38 +155,8 @@ export default async function NotePage({
         </div>
       </section>
 
-      {/* Cover */}
-      <section className="px-6 py-20">
-        <div
-          className="
-            relative
-
-            max-w-6xl
-            mx-auto
-
-            overflow-hidden
-
-            rounded-[2rem]
-
-            h-[500px]
-          "
-        >
-          <Image
-            src={
-              data.coverImage ||
-              "/images/boj.jpg"
-            }
-            alt={data.title}
-            fill
-            className="
-              object-cover
-            "
-          />
-        </div>
-      </section>
-
       {/* Content */}
-      <section className="px-6 pb-32">
+      <section className="px-6 py-24">
         <article
           className="
             prose
@@ -222,8 +171,10 @@ export default async function NotePage({
             prose-h2:mt-20
             prose-h2:mb-8
 
-            prose-p:text-lg
-            prose-p:leading-relaxed
+            prose-p:text-xl
+            prose-p:leading-[1.9]
+
+            prose-p:mb-8
 
             max-w-4xl
             mx-auto

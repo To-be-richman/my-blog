@@ -239,19 +239,6 @@ export default function Navbar() {
             >
               {t("navAbout")}
             </Link>
-
-            <Link
-              href={`/${locale}/contact`}
-              className="
-                text-sm
-                text-white/70
-
-                transition
-                hover:text-white
-              "
-            >
-              {t("navContact")}
-            </Link>
           </nav>
 
           {/* Right */}
@@ -498,23 +485,6 @@ export default function Navbar() {
                 "
               >
                 {t("navAbout")}
-              </Link>
-
-              <Link
-                href={`/${locale}/contact`}
-                onClick={() =>
-                  setMenuOpen(
-                    false
-                  )
-                }
-                className="
-                  text-3xl
-                  font-bold
-
-                  text-white
-                "
-              >
-                {t("navContact")}
               </Link>
 
               {/* Languages */}

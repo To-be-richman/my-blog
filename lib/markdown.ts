@@ -141,9 +141,13 @@ export function getPost(
       .map((token: any) => token.raw)
       .join("");
 
-    const slug = text
+    // 基础 slug
+    const baseSlug = text
       .toLowerCase()
       .replace(/[^\w]+/g, "-");
+
+    // 防止重复 key
+    const slug = `${baseSlug}-${headings.length}`;
 
     // 只收集 h2 / h3
     if (depth === 2 || depth === 3) {

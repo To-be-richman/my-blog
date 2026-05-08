@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 
 import ReadingProgress from "@/components/ReadingProgress";
 import TableOfContents from "@/components/TableOfContents";
-import RelatedPosts from "@/components/RelatedPosts";
 import Newsletter from "@/components/Newsletter";
 
 import {
@@ -62,17 +61,6 @@ export default async function PostPage({
   if (!post) {
     notFound();
   }
-
-  // ✅ 获取相关文章
-  const allPosts =
-    getAllPosts(locale);
-
-  const relatedPosts =
-    allPosts
-      .filter(
-        (p) => p.slug !== slug
-      )
-      .slice(0, 3);
 
   return (
     <main className="bg-black text-white min-h-screen">
@@ -180,7 +168,7 @@ export default async function PostPage({
         className="
           relative
 
-          max-w-3xl
+          max-w-4xl
           mx-auto
 
           px-6
@@ -268,12 +256,6 @@ export default async function PostPage({
             }}
           />
         </div>
-
-        {/* Related Articles */}
-        <RelatedPosts
-          posts={relatedPosts}
-          locale={locale}
-        />
 
         {/* Newsletter */}
         <Newsletter />

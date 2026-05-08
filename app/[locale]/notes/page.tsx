@@ -6,8 +6,6 @@ import matter from "gray-matter";
 
 import Link from "next/link";
 
-import Image from "next/image";
-
 export default async function NotesPage({
   params,
 }: {
@@ -65,10 +63,12 @@ export default async function NotesPage({
             "utf8"
           );
 
-        const { data } =
-          matter(
-            fileContents
-          );
+        const {
+          data,
+          content,
+        } = matter(
+          fileContents
+        );
 
         return {
           slug,
@@ -77,8 +77,10 @@ export default async function NotesPage({
             data.title || "",
 
           excerpt:
-            data.excerpt ||
-            "",
+            content.slice(
+              0,
+              180
+            ) + "...",
 
           date:
             data.date || "",
@@ -86,13 +88,14 @@ export default async function NotesPage({
           category:
             data.category ||
             "Macro",
-
-          coverImage:
-            data.coverImage ||
-            "/images/boj.jpg",
         };
       }
     );
+
+  // 最新排序
+  notes.sort((a, b) =>
+    a.date > b.date ? -1 : 1
+  );
 
   return (
     <main
@@ -110,8 +113,8 @@ export default async function NotesPage({
 
           px-6
 
-          pt-36
-          pb-24
+          pt-32
+          pb-20
         "
       >
         <div
@@ -168,7 +171,7 @@ export default async function NotesPage({
             md:grid-cols-2
             xl:grid-cols-3
 
-            gap-10
+            gap-8
           "
         >
           {notes.map(
@@ -179,109 +182,86 @@ export default async function NotesPage({
                 className="
                   group
 
-                  overflow-hidden
-
                   rounded-[2rem]
 
                   border border-white/10
 
-                  bg-white/[0.03]
+                  bg-white/[0.02]
+
+                  p-8
 
                   transition-all
                   duration-500
 
-                  hover:border-cyan-300/20
+                  hover:border-cyan-400/30
+                  hover:bg-white/[0.04]
                 "
               >
-                {/* Image */}
-                <div
+                {/* Category */}
+                <p
                   className="
-                    relative
+                    text-xs
 
-                    h-[260px]
+                    uppercase
+
+                    tracking-[0.3em]
+
+                    text-cyan-300/70
+
+                    mb-6
                   "
                 >
-                  <Image
-                    src={
-                      note.coverImage
-                    }
-                    alt={
-                      note.title
-                    }
-                    fill
-                    className="
-                      object-cover
+                  {
+                    note.category
+                  }
+                </p>
 
-                      transition
-                      duration-700
+                {/* Title */}
+                <h2
+                  className="
+                    text-3xl
 
-                      group-hover:scale-105
-                    "
-                  />
-                </div>
+                    font-bold
 
-                {/* Content */}
-                <div className="p-8">
-                  {/* Category */}
-                  <p
-                    className="
-                      text-xs
+                    tracking-tight
 
-                      uppercase
+                    leading-snug
 
-                      tracking-[0.3em]
+                    mb-6
 
-                      text-cyan-300/70
+                    group-hover:text-cyan-100
 
-                      mb-5
-                    "
-                  >
-                    {
-                      note.category
-                    }
-                  </p>
+                    transition
+                  "
+                >
+                  {note.title}
+                </h2>
 
-                  {/* Title */}
-                  <h2
-                    className="
-                      text-3xl
+                {/* Excerpt */}
+                <p
+                  className="
+                    text-white/60
 
-                      font-bold
+                    leading-relaxed
 
-                      leading-snug
+                    mb-10
+                  "
+                >
+                  {
+                    note.excerpt
+                  }
+                </p>
 
-                      mb-5
-                    "
-                  >
-                    {note.title}
-                  </h2>
+                {/* Date */}
+                <p
+                  className="
+                    text-sm
 
-                  {/* Excerpt */}
-                  <p
-                    className="
-                      text-white/60
-
-                      leading-relaxed
-
-                      mb-8
-                    "
-                  >
-                    {
-                      note.excerpt
-                    }
-                  </p>
-
-                  {/* Date */}
-                  <p
-                    className="
-                      text-sm
-
-                      text-white/30
-                    "
-                  >
-                    {note.date}
-                  </p>
-                </div>
+                    text-white/30
+                  "
+                >
+                  {note.date}
+                </p>
               </Link>
             )
           )}
