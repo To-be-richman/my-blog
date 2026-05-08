@@ -133,33 +133,30 @@ export function getPost(
     new marked.Renderer();
 
   // 自动生成 Heading ID
-  renderer.heading = (
-    text: any,
-    level: number
-  ) => {
-    // marked 新版本
-    const rawText =
-      typeof text === "string"
-        ? text
-        : text.text || "";
+  renderer.heading = ({
+    tokens,
+    depth,
+  }: any) => {
+    const text = tokens
+      .map((token: any) => token.raw)
+      .join("");
 
-    const escapedText =
-      rawText
-        .toLowerCase()
-        .replace(/[^\w]+/g, "-");
+    const slug = text
+      .toLowerCase()
+      .replace(/[^\w]+/g, "-");
 
     // 只收集 h2 / h3
-    if (level === 2 || level === 3) {
+    if (depth === 2 || depth === 3) {
       headings.push({
-        id: escapedText,
-        text: rawText,
+        id: slug,
+        text,
       });
     }
 
     return `
-      <h${level} id="${escapedText}">
-        ${rawText}
-      </h${level}>
+      <h${depth} id="${slug}">
+        ${text}
+      </h${depth}>
     `;
   };
 
