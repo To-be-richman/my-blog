@@ -1,0 +1,132 @@
+{
+  "Home": {
+    "title": "WEALTH·SUPER",
+    "subtitle": "投資 ・ 科技 ・ 長期思維",
+
+    "navArticles": "文章",
+    "navNotes": "市場筆記",
+    "navAbout": "關於",
+    "navContact": "聯絡",
+
+    "exploreButton": "閱讀文章",
+
+    "featuredTitle": "精選文章",
+    "featuredSubtitle": "關於科技、投資與全球策略的深度觀察。",
+
+    "post1Category": "科技",
+    "post1Title": "AI 與半導體戰略",
+
+    "post2Category": "投資",
+    "post2Title": "加密市場心理學",
+
+    "post3Category": "生活方式",
+    "post3Title": "打造全球個人品牌"
+  },
+
+  "Hero": {
+    "tag": "STRATEGIC DIRECTOR • INVESTOR • WRITER",
+
+    "title1": "市場、",
+    "title2": "科技",
+    "title3": "與人類行為",
+
+    "subtitle": "探索 AI、半導體、全球市場與長期思維的個人 Journal。",
+
+    "button": "閱讀文章"
+  },
+
+  "EditorsNote": {
+    "tag": "EDITOR'S NOTE",
+
+    "title": "市場從來不只是數字，它反映的是科技、心理、權力與人性。",
+
+    "description": "這個 Journal 以投資者與產業觀察者的視角，探索 AI、半導體、資本流動與全球策略。"
+  },
+
+  "About": {
+    "title": "關於",
+
+    "description": "半導體產業的戰略主管，專注於科技、投資與全球策略。"
+  },
+
+  "Contact": {
+    "title": "聯絡",
+
+    "headline": "讓我們建立連結。",
+
+    "description": "無論是投資交流、合作、採訪或策略對話，都歡迎聯絡。"
+  },
+
+  "Articles": {
+    "title": "文章",
+
+    "headline": "關於市場、科技與長期思維的觀察。",
+
+    "description": "關於 AI、半導體、投資、全球策略與人類行為的文章。",
+
+    "readMore": "閱讀更多",
+
+    "categoryTechnology": "科技",
+    "categoryInvestment": "投資",
+    "categoryLifestyle": "生活方式"
+  },
+
+  "Newsletter": {
+    "label": "電子報",
+
+    "title": "訂閱 Journal",
+
+    "subtitle": "每週分享市場、科技、投資與人類行為的洞察。",
+
+    "placeholder": "你的電子郵件",
+
+    "button": "訂閱",
+
+    "success": "你已成功訂閱。"
+  },
+
+  "RelatedPosts": {
+    "label": "繼續閱讀",
+
+    "title": "相關文章"
+  },
+
+  "Footer": {
+    "description": "探索市場、科技、投資與長期思維的高級 Journal。",
+
+    "articles": "文章",
+    "about": "關於",
+    "contact": "聯絡"
+  },
+
+  "Search": {
+    "button": "搜尋",
+    "placeholder": "搜尋文章...",
+    "empty": "找不到文章。"
+  },
+
+  "FeaturedHero": {
+    "label": "精選文章",
+    "category": "科技",
+    "title": "AI 與半導體戰略",
+    "description": "人工智慧正在重塑全球半導體競爭、基礎設施與長期資本流向。",
+    "button": "閱讀文章"
+  },
+
+  "MarketNotes": {
+    "label": "市場筆記",
+    "title": "關於流動性、半導體、加密貨幣與全球資本流動的每日觀察。",
+
+    "note1Category": "宏觀",
+    "note1Title": "日本央行政策轉向",
+
+    "note2Category": "半導體",
+    "note2Title": "NVIDIA 供應鏈",
+
+    "note3Category": "加密貨幣",
+    "note3Title": "BTC 流動性觀察",
+
+    "note4Category": "利率",
+    "note4Title": "美國10年期國債殖利率"
+  }
+}

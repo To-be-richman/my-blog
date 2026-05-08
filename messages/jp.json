@@ -1,0 +1,132 @@
+{
+  "Home": {
+    "title": "WEALTH·SUPER",
+    "subtitle": "投資 ・ テクノロジー ・ 長期思考",
+
+    "navArticles": "記事",
+    "navNotes": "マーケットノート",
+    "navAbout": "概要",
+    "navContact": "連絡",
+
+    "exploreButton": "記事を読む",
+
+    "featuredTitle": "注目の記事",
+    "featuredSubtitle": "テクノロジー、投資、グローバル戦略についての深い考察。",
+
+    "post1Category": "テクノロジー",
+    "post1Title": "AIと半導体戦略",
+
+    "post2Category": "投資",
+    "post2Title": "暗号市場の心理学",
+
+    "post3Category": "ライフスタイル",
+    "post3Title": "グローバルな個人ブランド構築"
+  },
+
+  "Hero": {
+    "tag": "STRATEGIC DIRECTOR • INVESTOR • WRITER",
+
+    "title1": "マーケット、",
+    "title2": "テクノロジー",
+    "title3": "そして人間行動",
+
+    "subtitle": "AI、半導体、グローバル市場、長期思考を探求する個人的なジャーナル。",
+
+    "button": "記事を読む"
+  },
+
+  "EditorsNote": {
+    "tag": "EDITOR'S NOTE",
+
+    "title": "マーケットは単なる数字ではなく、テクノロジー、心理、権力、人間性を映し出している。",
+
+    "description": "このジャーナルでは、投資家と業界観察者の視点から、AI、半導体、資本の流れ、グローバル戦略を探求します。"
+  },
+
+  "About": {
+    "title": "概要",
+
+    "description": "半導体業界の戦略ディレクター。テクノロジー、投資、グローバル戦略に注力。"
+  },
+
+  "Contact": {
+    "title": "連絡",
+
+    "headline": "つながりましょう。",
+
+    "description": "投資、コラボレーション、インタビュー、戦略的な対話についてはお気軽にご連絡ください。"
+  },
+
+  "Articles": {
+    "title": "記事",
+
+    "headline": "マーケット、テクノロジー、長期思考についての考察。",
+
+    "description": "AI、半導体、投資、グローバル戦略、人間行動についての記事。",
+
+    "readMore": "続きを読む",
+
+    "categoryTechnology": "テクノロジー",
+    "categoryInvestment": "投資",
+    "categoryLifestyle": "ライフスタイル"
+  },
+
+  "Newsletter": {
+    "label": "ニュースレター",
+
+    "title": "ジャーナルを購読する",
+
+    "subtitle": "マーケット、テクノロジー、投資、人間行動に関する洞察を毎週お届けします。",
+
+    "placeholder": "メールアドレス",
+
+    "button": "購読する",
+
+    "success": "購読が完了しました。"
+  },
+
+  "RelatedPosts": {
+    "label": "続きを読む",
+
+    "title": "関連記事"
+  },
+
+  "Footer": {
+    "description": "マーケット、テクノロジー、投資、長期思考を探求するラグジュアリージャーナル。",
+
+    "articles": "記事",
+    "about": "概要",
+    "contact": "連絡"
+  },
+
+  "Search": {
+    "button": "検索",
+    "placeholder": "記事を検索...",
+    "empty": "記事が見つかりません。"
+  },
+
+  "FeaturedHero": {
+    "label": "注目の記事",
+    "category": "テクノロジー",
+    "title": "AIと半導体戦略",
+    "description": "人工知能は世界の半導体競争、インフラ、長期的な資本の流れを再構築している。",
+    "button": "記事を読む"
+  },
+
+  "MarketNotes": {
+    "label": "マーケットノート",
+    "title": "流動性、半導体、暗号資産、世界の資本フローに関する日々の観察。",
+
+    "note1Category": "マクロ",
+    "note1Title": "日銀政策転換",
+
+    "note2Category": "半導体",
+    "note2Title": "NVIDIAサプライチェーン",
+
+    "note3Category": "暗号資産",
+    "note3Title": "BTC流動性ウォッチ",
+
+    "note4Category": "金利",
+    "note4Title": "米10年債利回り"
+  }
+}
