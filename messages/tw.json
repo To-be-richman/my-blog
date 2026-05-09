@@ -2,137 +2,94 @@
   "Home": {
     "title": "WEALTH·SUPER",
     "subtitle": "投資 ・ 科技 ・ 長期思維",
-
-    "navArticles": "文章",
-    "navNotes": "市場筆記",
+    "navHome": "首頁",
+    "navArticles": "專欄",
+    "navNotes": "快訊",
     "navAbout": "關於",
     "navContact": "聯絡",
-
     "exploreButton": "閱讀文章",
-
-    "featuredTitle": "精選文章",
-    "featuredSubtitle": "關於科技、投資與全球策略的深度觀察。",
-
+    "featuredTitle": "精選深研",
+    "featuredSubtitle": "關於科技、投資與全球戰略的深度觀察。",
     "post1Category": "科技",
     "post1Title": "AI 與半導體戰略",
-
     "post2Category": "投資",
     "post2Title": "加密市場心理學",
-
     "post3Category": "生活方式",
     "post3Title": "打造全球個人品牌"
   },
-
   "Hero": {
-    "tag": "STRATEGIC DIRECTOR • INVESTOR • WRITER",
-
+    "tag": "戰略總監 • 投資者 • 作者",
     "title1": "市場、",
     "title2": "科技",
     "title3": "與人類行為",
-
-    "subtitle": "探索 AI、半導體、全球市場與長期思維的個人 Journal。",
-
+    "subtitle": "探索 AI、半導體、全球市場與長期思維的個人誌。",
     "button": "閱讀文章"
   },
-
   "EditorsNote": {
-    "tag": "EDITOR'S NOTE",
-
-    "title": "市場從來不只是數字，它反映的是科技、心理、權力與人性。",
-
-    "description": "這個 Journal 以投資者與產業觀察者的視角，探索 AI、半導體、資本流動與全球策略。"
+    "tag": "編者按",
+    "title": "市場從不僅僅是數字——它們反映了科技、心理、權力與人性。",
+    "description": "本誌通過投資者與行業觀察者的視角，探索 AI、半導體、資本流動與全球戰略。"
   },
-
   "About": {
-  "label": "ABOUT",
-
-  "title": "關於",
-
-  "headline": "關於市場、科技與人類行為",
-
-  "description": "一個長期觀察 AI、半導體、全球市場、流動性與人類心理的個人 Journal。",
-
-  "extra": "我長期關注全球流動性、AI 基礎設施、半導體產業與 Crypto Macro 的交叉變化，並嘗試從市場情緒與人類行為的角度理解這個脆弱時代。"
-},
-
+    "title": "關於",
+    "description": "半導體產業戰略總監，專注於科技、投資與全球戰略。"
+  },
   "Contact": {
     "title": "聯絡",
-
-    "headline": "讓我們建立連結。",
-
-    "description": "無論是投資交流、合作、採訪或策略對話，都歡迎聯絡。"
+    "headline": "建立聯繫。",
+    "description": "歡迎就投資討論、合作、訪談或戰略對話與我聯絡。"
   },
-
   "Articles": {
-    "title": "文章",
-
-    "headline": "關於市場、科技與長期思維的觀察。",
-
-    "description": "關於 AI、半導體、投資、全球策略與人類行為的文章。",
-
-    "readMore": "閱讀更多",
-
+    "title": "專欄",
+    "headline": "對市場、科技與長期思維的觀察。",
+    "description": "關於 AI、半導體、投資、全球戰略與人類行為的深度文章。",
+    "readMore": "閱讀全文",
     "categoryTechnology": "科技",
     "categoryInvestment": "投資",
     "categoryLifestyle": "生活方式"
   },
-
   "Newsletter": {
-    "label": "電子報",
-
-    "title": "訂閱 Journal",
-
-    "subtitle": "每週分享市場、科技、投資與人類行為的洞察。",
-
-    "placeholder": "你的電子郵件",
-
-    "button": "訂閱",
-
-    "success": "你已成功訂閱。"
+    "label": "動態訂閱",
+    "title": "訂閱研究週報",
+    "subtitle": "獲取關於市場、科技與流動性的深度洞察。通過您偏好的平台接收更新。",
+    "placeholder": "您的電子郵箱",
+    "phonePlaceholder": "帳號 / 號碼",
+    "button": "立即訂閱",
+    "success": "訂閱成功。歡迎加入 WEALTH·SUPER。"
   },
-
   "RelatedPosts": {
-    "label": "繼續閱讀",
-
-    "title": "相關文章"
+    "label": "延伸閱讀",
+    "title": "相關章節"
   },
-
-"Footer": {
-  "description": "探索市場、科技、投資與長期思維的 Journal。",
-
-  "articles": "文章",
-  "notes": "市場筆記",
-  "about": "關於"
-},
-
+  "Footer": {
+    "description": "探索市場、科技、投資與長期思維的專業誌。",
+    "articles": "專欄",
+    "about": "關於",
+    "notes": "快訊",
+    "contact": "聯絡"
+  },
   "Search": {
-    "button": "搜尋",
-    "placeholder": "搜尋文章...",
-    "empty": "找不到文章。"
+    "button": "搜索",
+    "placeholder": "搜索情報...",
+    "empty": "未找到相關內容。"
   },
-
   "FeaturedHero": {
     "label": "精選文章",
     "category": "科技",
     "title": "AI 與半導體戰略",
-    "description": "人工智慧正在重塑全球半導體競爭、基礎設施與長期資本流向。",
+    "description": "人工智慧如何重塑全球半導體競爭、基礎設施與長期資本流動。",
     "button": "閱讀文章"
   },
-
   "MarketNotes": {
-    "label": "市場筆記",
+    "label": "市場快訊",
     "title": "關於流動性、半導體、加密貨幣與全球資本流動的每日觀察。",
-
     "note1Category": "宏觀",
     "note1Title": "日本央行政策轉向",
-
     "note2Category": "半導體",
-    "note2Title": "NVIDIA 供應鏈",
-
+    "note2Title": "英偉達供應鏈",
     "note3Category": "加密貨幣",
-    "note3Title": "BTC 流動性觀察",
-
+    "note3Title": "比特幣流動性觀察",
     "note4Category": "利率",
-    "note4Title": "美國10年期國債殖利率"
+    "note4Title": "美債十年期收益率"
   }
 }

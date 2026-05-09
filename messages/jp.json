@@ -1,137 +1,94 @@
 {
   "Home": {
     "title": "WEALTH·SUPER",
-    "subtitle": "投資 ・ テクノロジー ・ 長期思考",
-
+    "subtitle": "投資 ・ テクノロジー ・ 長期的思考",
+    "navHome": "ホーム",
     "navArticles": "記事",
-    "navNotes": "マーケットノート",
-    "navAbout": "概要",
-    "navContact": "連絡",
-
+    "navNotes": "ノート",
+    "navAbout": "著者について",
+    "navContact": "お問い合わせ",
     "exploreButton": "記事を読む",
-
-    "featuredTitle": "注目の記事",
-    "featuredSubtitle": "テクノロジー、投資、グローバル戦略についての深い考察。",
-
+    "featuredTitle": "注目のレポート",
+    "featuredSubtitle": "テクノロジー、投資、グローバル戦略に関する深い洞察。",
     "post1Category": "テクノロジー",
     "post1Title": "AIと半導体戦略",
-
     "post2Category": "投資",
     "post2Title": "暗号市場の心理学",
-
     "post3Category": "ライフスタイル",
     "post3Title": "グローバルな個人ブランド構築"
   },
-
   "Hero": {
-    "tag": "STRATEGIC DIRECTOR • INVESTOR • WRITER",
-
-    "title1": "マーケット、",
-    "title2": "テクノロジー",
-    "title3": "そして人間行動",
-
-    "subtitle": "AI、半導体、グローバル市場、長期思考を探求する個人的なジャーナル。",
-
+    "tag": "ストラテジーディレクター • 投資家 • 執筆家",
+    "title1": "市場、",
+    "title2": "技術",
+    "title3": "と人間行動",
+    "subtitle": "AI、半導体、グローバル市場、そして長期的思考を探求するパーソナルジャーナル。",
     "button": "記事を読む"
   },
-
   "EditorsNote": {
-    "tag": "EDITOR'S NOTE",
-
-    "title": "マーケットは単なる数字ではなく、テクノロジー、心理、権力、人間性を映し出している。",
-
-    "description": "このジャーナルでは、投資家と業界観察者の視点から、AI、半導体、資本の流れ、グローバル戦略を探求します。"
+    "tag": "編集者ノート",
+    "title": "市場は単なる数字ではありません。テクノロジー、心理、権力、そして人間性を反映しています。",
+    "description": "このジャーナルでは、投資家や業界観察者の視点から AI、半導体、資本フロー、グローバル戦略を探求します。"
   },
-
-"About": {
-  "label": "ABOUT",
-
-  "title": "概要",
-
-  "headline": "マーケット、テクノロジー、そして人間行動について",
-
-  "description": "AI、半導体、グローバル市場、流動性、そして人間心理を長期視点で観察する個人ジャーナル。",
-
-  "extra": "私は長期的に、グローバル流動性、AIインフラ、半導体産業、そしてCrypto Macroの交差点を観察し、この脆弱な時代を市場心理と人間行動の視点から理解しようとしている。"
-},
-
+  "About": {
+    "title": "著者について",
+    "description": "半導体業界の戦略ディレクター。テクノロジー、投資、グローバル戦略に焦点を当てています。"
+  },
   "Contact": {
-    "title": "連絡",
-
-    "headline": "つながりましょう。",
-
-    "description": "投資、コラボレーション、インタビュー、戦略的な対話についてはお気軽にご連絡ください。"
+    "title": "お問い合わせ",
+    "headline": "コネクトしましょう。",
+    "description": "投資に関する議論、コラボレーション、インタビュー、または戦略的な対話については、お気軽にお問い合わせください。"
   },
-
   "Articles": {
-    "title": "記事",
-
-    "headline": "マーケット、テクノロジー、長期思考についての考察。",
-
-    "description": "AI、半導体、投資、グローバル戦略、人間行動についての記事。",
-
+    "title": "記事一覧",
+    "headline": "市場、テクノロジー、長期的思考に関する観察。",
+    "description": "AI、半導体、投資、グローバル戦略、人間行動に関するエッセイ。",
     "readMore": "続きを読む",
-
     "categoryTechnology": "テクノロジー",
     "categoryInvestment": "投資",
     "categoryLifestyle": "ライフスタイル"
   },
-
   "Newsletter": {
     "label": "ニュースレター",
-
     "title": "ジャーナルを購読する",
-
-    "subtitle": "マーケット、テクノロジー、投資、人間行動に関する洞察を毎週お届けします。",
-
+    "subtitle": "市場、テクノロジー、流動性に関する週刊インサイト。お好みのプラットフォームで更新を受け取ります。",
     "placeholder": "メールアドレス",
-
+    "phonePlaceholder": "ID / 番号",
     "button": "購読する",
-
-    "success": "購読が完了しました。"
+    "success": "購読が完了しました。WEALTH·SUPER へようこそ。"
   },
-
   "RelatedPosts": {
-    "label": "続きを読む",
-
+    "label": "読み続ける",
     "title": "関連記事"
   },
-
- "Footer": {
-  "description": "市場、テクノロジー、投資、長期思考を探求するジャーナル。",
-
-  "articles": "記事",
-  "notes": "マーケットノート",
-  "about": "概要"
-    },
-
+  "Footer": {
+    "description": "市場、テクノロジー、投資、長期的思考を探求するラグジュアリージャーナル。",
+    "articles": "記事",
+    "about": "著者について",
+    "notes": "ノート",
+    "contact": "お問い合わせ"
+  },
   "Search": {
     "button": "検索",
-    "placeholder": "記事を検索...",
-    "empty": "記事が見つかりません。"
+    "placeholder": "インテリジェンスを検索...",
+    "empty": "結果が見つかりませんでした。"
   },
-
   "FeaturedHero": {
-    "label": "注目の記事",
+    "label": "注目記事",
     "category": "テクノロジー",
     "title": "AIと半導体戦略",
-    "description": "人工知能は世界の半導体競争、インフラ、長期的な資本の流れを再構築している。",
+    "description": "AIが世界の半導体競争、インフラ、長期的な資本フローをどのように再構築しているか。",
     "button": "記事を読む"
   },
-
   "MarketNotes": {
     "label": "マーケットノート",
-    "title": "流動性、半導体、暗号資産、世界の資本フローに関する日々の観察。",
-
+    "title": "流動性、半導体、暗号資産、グローバル資本フローに関する日々の観察。",
     "note1Category": "マクロ",
-    "note1Title": "日銀政策転換",
-
+    "note1Title": "日銀の政策転換",
     "note2Category": "半導体",
-    "note2Title": "NVIDIAサプライチェーン",
-
+    "note2Title": "NVIDIA サプライチェーン",
     "note3Category": "暗号資産",
-    "note3Title": "BTC流動性ウォッチ",
-
+    "note3Title": "BTC 流動性ウォッチ",
     "note4Category": "金利",
     "note4Title": "米10年債利回り"
   }

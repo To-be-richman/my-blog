@@ -2,110 +2,77 @@
   "Home": {
     "title": "WEALTH·SUPER",
     "subtitle": "Investing ・ Technology ・ Long-term Thinking",
-
+    "navHome": "Home",
     "navArticles": "Articles",
     "navNotes": "Notes",
     "navAbout": "About",
     "navContact": "Contact",
-
     "exploreButton": "Read Essays",
-
     "featuredTitle": "Featured Essays",
     "featuredSubtitle": "Deep observations on technology, investing and global strategy.",
-
     "post1Category": "Technology",
     "post1Title": "AI & Semiconductor Strategy",
-
     "post2Category": "Investment",
     "post2Title": "Crypto Market Psychology",
-
     "post3Category": "Lifestyle",
     "post3Title": "Building a Global Personal Brand"
   },
-
   "Hero": {
     "tag": "STRATEGIC DIRECTOR • INVESTOR • WRITER",
-
     "title1": "Markets,",
     "title2": "Technology",
     "title3": "& Human Behavior",
-
     "subtitle": "A personal journal exploring AI, semiconductors, global markets and long-term thinking.",
-
     "button": "Read Essays"
   },
-
   "EditorsNote": {
     "tag": "EDITOR'S NOTE",
-
     "title": "Markets are never just numbers — they reflect technology, psychology, power and human nature.",
-
     "description": "This journal explores AI, semiconductors, capital flows and global strategy through the lens of an investor and industry observer."
   },
-
   "About": {
     "title": "About",
-
     "description": "Strategic Director in the semiconductor industry, focused on technology, investing and global strategy."
   },
-
   "Contact": {
     "title": "Contact",
-
     "headline": "Let's Connect.",
-
     "description": "For investment discussions, collaborations, interviews or strategic conversations, feel free to reach out."
   },
-
   "Articles": {
     "title": "Articles",
-
     "headline": "Observations on markets, technology and long-term thinking.",
-
     "description": "Essays on AI, semiconductors, investing, global strategy and human behavior.",
-
     "readMore": "Read More",
-
     "categoryTechnology": "Technology",
     "categoryInvestment": "Investment",
     "categoryLifestyle": "Lifestyle"
   },
-
   "Newsletter": {
     "label": "NEWSLETTER",
-
     "title": "Subscribe to the Journal",
-
-    "subtitle": "Weekly insights on markets, technology, investing and human behavior.",
-
+    "subtitle": "Weekly insights on markets, technology, investing and human behavior. Receive updates via your preferred platform.",
     "placeholder": "Your email",
-
+    "phonePlaceholder": "ID / Number",
     "button": "Subscribe",
-
     "success": "You are now subscribed."
   },
-
   "RelatedPosts": {
     "label": "CONTINUE READING",
-
     "title": "Related Articles"
   },
-
   "Footer": {
     "description": "A luxury journal exploring markets, technology, investing and long-term thinking.",
-
     "articles": "Articles",
     "about": "About",
- "notes": "Notes",
+    "notes": "Notes",
     "contact": "Contact"
   },
-
   "Search": {
     "button": "Search",
     "placeholder": "Search articles...",
     "empty": "No articles found."
   },
-
   "FeaturedHero": {
     "label": "FEATURED ESSAY",
     "category": "Technology",
@@ -113,20 +80,15 @@
     "description": "How artificial intelligence is reshaping global semiconductor competition, infrastructure and long-term capital flows.",
     "button": "Read Article"
   },
-
   "MarketNotes": {
     "label": "MARKET NOTES",
     "title": "Daily observations on liquidity, semiconductors, crypto and global capital flows.",
-
     "note1Category": "Macro",
     "note1Title": "BOJ Policy Shift",
-
     "note2Category": "Semiconductor",
     "note2Title": "NVIDIA Supply Chain",
-
     "note3Category": "Crypto",
     "note3Title": "BTC Liquidity Watch",
-
     "note4Category": "Rates",
     "note4Title": "US 10Y Yield"
   }
