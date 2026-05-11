@@ -27,7 +27,7 @@
   },
   "EditorsNote": {
     "tag": "編集者ノート",
-    "title": "市場は単なる数字ではありません。テクノロジー、心理、権力、そして人間性を反映しています。",
+    "title": "市場は単なる数字ではありません。テクノロジー、心理、権力、反映しています。",
     "description": "このジャーナルでは、投資家や業界観察者の視点から AI、半導体、資本フロー、グローバル戦略を探求します。"
   },
   "About": {
@@ -82,7 +82,9 @@
   },
   "MarketNotes": {
     "label": "マーケットノート",
+    "terminal_label": "// ターミナルフィード",
     "title": "流動性、半導体、暗号資産、グローバル資本フローに関する日々の観察。",
+    "view_all": "すべてのデータを見る ->",
     "note1Category": "マクロ",
     "note1Title": "日銀の政策転換",
     "note2Category": "半導体",
@@ -91,5 +93,23 @@
     "note3Title": "BTC 流動性ウォッチ",
     "note4Category": "金利",
     "note4Title": "米10年債利回り"
+  },
+  "Categories": {
+    "ALL": "すべて",
+    "MACRO": "マクロ",
+    "TECHNOLOGY": "テクノロジー",
+    "INVESTMENT": "投資",
+    "LIFESTYLE": "ライフスタイル",
+    "TECHNOLOGY • MACRO": "テック • マクロ",
+    "CRYPTO • MACRO": "暗号資産 • マクロ",
+    "CULTURE & VALUE": "文化と価値",
+    "CRYPTO": "暗号資産"
+  },
+  "Time": {
+    "dayAgo": "1日前",
+    "daysAgo": "{count}日前",
+    "hourAgo": "1時間前",
+    "hoursAgo": "約{count}時間前",
+    "justNow": "たった今"
   }
 }

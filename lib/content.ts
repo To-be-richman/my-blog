@@ -1,4 +1,4 @@
-// lib/content.ts - 【安全恢复版】
+// lib/content.ts - 【终端增强版】
 import { getAllPosts } from "./markdown";
 import fs from "fs";
 import path from "path";
@@ -12,17 +12,20 @@ export interface UnifiedContent {
   category: string;
   type: 'post' | 'note';
   source: 'local' | 'firebase';
+  pinned?: boolean; // 新增：支持置顶标记
 }
 
 export async function getUnifiedFeed(locale: string): Promise<UnifiedContent[]> {
-  // ✅ 暂时只读取本地数据，彻底跳过 Firebase 以解决报错
+  // 1. 获取本地 Posts (文章)
   const rawPosts = getAllPosts(locale);
   const posts: UnifiedContent[] = rawPosts.map(p => ({
     ...p,
     type: 'post' as const,
-    source: 'local' as const
+    source: 'local' as const,
+    pinned: false // 文章默认不置顶，如需置顶可在 MD 中添加
   }));
 
+  // 2. 获取本地 Notes (动态笔记)
   const notesDirectory = path.join(process.cwd(), "content/notes", locale);
   let localNotes: UnifiedContent[] = [];
 
@@ -37,14 +40,22 @@ export async function getUnifiedFeed(locale: string): Promise<UnifiedContent[]> 
         excerpt: content ? content.slice(0, 100) + "..." : "",
         date: data.date || "",
         category: data.category || "Macro",
+        pinned: data.pinned || false, // 从 MD 的 Front Matter 中读取 pinned 字段
         type: 'note' as const,
         source: 'local' as const
       };
     });
   }
 
-  // 排序并返回
-  return [...posts, ...localNotes].sort((a, b) => 
-    new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  // 3. 复合排序逻辑：
+  // 第一权重：pinned (置顶的文章/笔记排在最前)
+  // 第二权重：date (日期倒序，最新的排在前面)
+  return [...posts, ...localNotes].sort((a, b) => {
+    // 处理置顶逻辑
+    if (a.pinned && !b.pinned) return -1;
+    if (!a.pinned && b.pinned) return 1;
+
+    // 处理时间逻辑
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
 }

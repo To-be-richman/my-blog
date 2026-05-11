@@ -2,6 +2,7 @@
 title: "母親節：一場失敗的投資"
 category: "Culture & Value"
 date: "2026-05-10"
+pinned: true
 ---
 
 母親節的發起人安娜·賈維斯，最終在療養院窮困潦倒地去世。

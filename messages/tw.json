@@ -1,95 +1,115 @@
 {
   "Home": {
     "title": "WEALTH·SUPER",
-    "subtitle": "投資 ・ 科技 ・ 長期思維",
+    "subtitle": "投資 ・ 科技 ・ 長期思考",
     "navHome": "首頁",
-    "navArticles": "專欄",
-    "navNotes": "快訊",
-    "navAbout": "關於",
-    "navContact": "聯絡",
+    "navArticles": "文章",
+    "navNotes": "筆記",
+    "navAbout": "關於作者",
+    "navContact": "聯絡我們",
     "exploreButton": "閱讀文章",
-    "featuredTitle": "精選深研",
-    "featuredSubtitle": "關於科技、投資與全球戰略的深度觀察。",
+    "featuredTitle": "焦點報告",
+    "featuredSubtitle": "關於科技、投資與全球戰略的深度洞察。",
     "post1Category": "科技",
     "post1Title": "AI 與半導體戰略",
     "post2Category": "投資",
     "post2Title": "加密市場心理學",
     "post3Category": "生活方式",
-    "post3Title": "打造全球個人品牌"
+    "post3Title": "構建全球個人品牌"
   },
   "Hero": {
     "tag": "戰略總監 • 投資者 • 作者",
     "title1": "市場、",
-    "title2": "科技",
+    "title2": "技術",
     "title3": "與人類行為",
-    "subtitle": "探索 AI、半導體、全球市場與長期思維的個人誌。",
+    "subtitle": "探索 AI、半導體、全球市場及長期思考的個人日誌。",
     "button": "閱讀文章"
   },
   "EditorsNote": {
-    "tag": "編者按",
-    "title": "市場從不僅僅是數字——它們反映了科技、心理、權力與人性。",
-    "description": "本誌通過投資者與行業觀察者的視角，探索 AI、半導體、資本流動與全球戰略。"
+    "tag": "編者手記",
+    "title": "市場不僅僅是數字，它反映了技術、心理、權力與人性。",
+    "description": "在本誌中，我們從投資者與行業觀察者的視角，探討 AI、半導體、資本流動與全球戰略。"
   },
   "About": {
-    "title": "關於",
-    "description": "半導體產業戰略總監，專注於科技、投資與全球戰略。"
+    "title": "關於作者",
+    "description": "半導體行業戰略總監，專注於科技、投資與全球戰略。"
   },
   "Contact": {
-    "title": "聯絡",
-    "headline": "建立聯繫。",
-    "description": "歡迎就投資討論、合作、訪談或戰略對話與我聯絡。"
+    "title": "聯絡我們",
+    "headline": "保持聯繫。",
+    "description": "如需投資討論、合作、訪談或戰略對話，請隨時與我聯繫。"
   },
   "Articles": {
-    "title": "專欄",
-    "headline": "對市場、科技與長期思維的觀察。",
-    "description": "關於 AI、半導體、投資、全球戰略與人類行為的深度文章。",
-    "readMore": "閱讀全文",
+    "title": "文章列表",
+    "headline": "關於市場、科技與長期思考的觀察。",
+    "description": "關於 AI、半導體、投資、全球戰略及人類行為的隨筆。",
+    "readMore": "閱讀更多",
     "categoryTechnology": "科技",
     "categoryInvestment": "投資",
     "categoryLifestyle": "生活方式"
   },
   "Newsletter": {
-    "label": "動態訂閱",
-    "title": "訂閱研究週報",
-    "subtitle": "獲取關於市場、科技與流動性的深度洞察。通過您偏好的平台接收更新。",
-    "placeholder": "您的電子郵箱",
-    "phonePlaceholder": "帳號 / 號碼",
-    "button": "立即訂閱",
-    "success": "訂閱成功。歡迎加入 WEALTH·SUPER。"
+    "label": "電子報",
+    "title": "訂閱日誌",
+    "subtitle": "關於市場、科技與流動性的每週洞察。在您喜愛的平台上獲取更新。",
+    "placeholder": "電子郵件地址",
+    "phonePlaceholder": "ID / 號碼",
+    "button": "訂閱",
+    "success": "訂閱成功。歡迎來到 WEALTH·SUPER。"
   },
   "RelatedPosts": {
-    "label": "延伸閱讀",
-    "title": "相關章節"
+    "label": "繼續閱讀",
+    "title": "相關文章"
   },
   "Footer": {
-    "description": "探索市場、科技、投資與長期思維的專業誌。",
-    "articles": "專欄",
-    "about": "關於",
-    "notes": "快訊",
-    "contact": "聯絡"
+    "description": "探索市場、科技、投資與長期思考的奢華日誌。",
+    "articles": "文章",
+    "about": "關於作者",
+    "notes": "筆記",
+    "contact": "聯絡我們"
   },
   "Search": {
-    "button": "搜索",
-    "placeholder": "搜索情報...",
-    "empty": "未找到相關內容。"
+    "button": "搜尋",
+    "placeholder": "搜尋情報...",
+    "empty": "找不到相關結果。"
   },
   "FeaturedHero": {
     "label": "精選文章",
     "category": "科技",
     "title": "AI 與半導體戰略",
-    "description": "人工智慧如何重塑全球半導體競爭、基礎設施與長期資本流動。",
+    "description": "AI 如何重塑全球半導體競爭、基礎設施及長期資本流動。",
     "button": "閱讀文章"
   },
   "MarketNotes": {
-    "label": "市場快訊",
-    "title": "關於流動性、半導體、加密貨幣與全球資本流動的每日觀察。",
+    "label": "市場筆記",
+    "terminal_label": "// 終端數據",
+    "title": "關於流動性、半導體、加密資產及全球資本流動的日常觀察。",
+    "view_all": "查看所有數據 ->",
     "note1Category": "宏觀",
-    "note1Title": "日本央行政策轉向",
+    "note1Title": "日銀政策轉向",
     "note2Category": "半導體",
-    "note2Title": "英偉達供應鏈",
-    "note3Category": "加密貨幣",
-    "note3Title": "比特幣流動性觀察",
+    "note2Title": "NVIDIA 供應鏈",
+    "note3Category": "加密資產",
+    "note3Title": "BTC 流動性監測",
     "note4Category": "利率",
-    "note4Title": "美債十年期收益率"
+    "note4Title": "美 10 年債收益率"
+  },
+  "Categories": {
+    "ALL": "全部",
+    "MACRO": "宏觀",
+    "TECHNOLOGY": "科技",
+    "INVESTMENT": "投資",
+    "LIFESTYLE": "生活方式",
+    "TECHNOLOGY • MACRO": "科技 • 宏觀",
+    "CRYPTO • MACRO": "加密資產 • 宏觀",
+    "CULTURE & VALUE": "文化與價值",
+    "CRYPTO": "加密資產"
+  },
+  "Time": {
+    "dayAgo": "1 天前",
+    "daysAgo": "{count} 天前",
+    "hourAgo": "1 小時前",
+    "hoursAgo": "大約 {count} 小時前",
+    "justNow": "剛剛"
   }
 }

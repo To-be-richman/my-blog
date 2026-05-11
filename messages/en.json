@@ -82,7 +82,9 @@
   },
   "MarketNotes": {
     "label": "MARKET NOTES",
+    "terminal_label": "// TERMINAL_FEED",
     "title": "Daily observations on liquidity, semiconductors, crypto and global capital flows.",
+    "view_all": "VIEW_ALL_DATA ->",
     "note1Category": "Macro",
     "note1Title": "BOJ Policy Shift",
     "note2Category": "Semiconductor",
@@ -91,5 +93,23 @@
     "note3Title": "BTC Liquidity Watch",
     "note4Category": "Rates",
     "note4Title": "US 10Y Yield"
+  },
+  "Categories": {
+    "ALL": "ALL",
+    "MACRO": "MACRO",
+    "TECHNOLOGY": "TECHNOLOGY",
+    "INVESTMENT": "INVESTMENT",
+    "LIFESTYLE": "LIFESTYLE",
+    "TECHNOLOGY • MACRO": "TECH • MACRO",
+    "CRYPTO • MACRO": "CRYPTO • MACRO",
+    "CULTURE & VALUE": "CULTURE & VALUE",
+    "CRYPTO": "CRYPTO"
+  },
+  "Time": {
+    "dayAgo": "1 DAY AGO",
+    "daysAgo": "{count} DAYS AGO",
+    "hourAgo": "1 HOUR AGO",
+    "hoursAgo": "ABOUT {count} HOURS AGO",
+    "justNow": "JUST NOW"
   }
 }

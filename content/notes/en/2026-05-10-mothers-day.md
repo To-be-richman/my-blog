@@ -2,6 +2,7 @@
 title: "The Failed Investment of Mother’s Day"
 category: "Culture & Value"
 date: "2026-05-10"
+pinned: true
 ---
 
 Anna Jarvis, the woman who founded Mother’s Day, died penniless in a sanitarium.
