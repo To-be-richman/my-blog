@@ -1,4 +1,4 @@
-发---
+---
 title: "日經六萬點：AI 驅動的垂直重估"
 category: "Macro"
 date: "2026-05-11"
