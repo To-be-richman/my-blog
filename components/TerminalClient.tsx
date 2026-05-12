@@ -5,14 +5,9 @@ import dynamic from "next/dynamic";
 import { TradeLog } from "@/lib/trades";
 import { motion, AnimatePresence } from "framer-motion";
 
-// 异步加载 3D 引擎
 const TradeCardCinematic = dynamic(() => import("./TradeCardCinematic"), { 
   ssr: false,
-  loading: () => (
-    <div className="h-full w-full bg-white/[0.02] animate-pulse rounded-3xl flex items-center justify-center font-mono text-[10px] text-zinc-600">
-      CONNECTING_TO_STATION...
-    </div>
-  )
+  loading: () => <div className="h-full w-full bg-white/5 animate-pulse rounded-3xl" />
 });
 
 export default function TerminalClient({ trades = [], locale }: { trades: TradeLog[]; locale: string }) {
@@ -25,18 +20,10 @@ export default function TerminalClient({ trades = [], locale }: { trades: TradeL
     }
   }, [trades, selectedTrade]);
 
-  if (!trades || trades.length === 0 || !selectedTrade) {
-    return (
-      <div className="h-[600px] w-full flex items-center justify-center border border-dashed border-white/10 rounded-[2rem] bg-white/5 font-mono text-zinc-500">
-        [ SIGNAL_LOST: NO_DATA_DETECTED ]
-      </div>
-    );
-  }
+  if (!trades || trades.length === 0 || !selectedTrade) return null;
 
   return (
     <div className="grid lg:grid-cols-12 gap-5 items-stretch min-h-[850px]">
-      
-      {/* 左侧列表：极窄红框模式 (col-span-1) */}
       <div className="lg:col-span-1 flex flex-col border-r border-white/5 pr-4">
         <p className="text-[8px] font-mono text-zinc-600 uppercase mb-5 tracking-widest text-center">Archive</p>
         <div className="flex-1 space-y-4 overflow-y-auto custom-scrollbar max-h-[75vh]">
@@ -52,14 +39,13 @@ export default function TerminalClient({ trades = [], locale }: { trades: TradeL
                   : "border-white/5 grayscale opacity-30 hover:opacity-100 hover:grayscale-0"
               }`}
             >
+              {/* ✅ 这里必须匹配 screenshots */}
               <img src={trade.screenshots[currentLocale]} className="w-full h-full object-cover" alt={trade.pair} />
-              <div className={`absolute inset-0 bg-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity ${selectedTrade.id === trade.id ? 'opacity-100' : ''}`} />
             </motion.button>
           ))}
         </div>
       </div>
 
-      {/* 中间舞台：3D 区域 (col-span-7) */}
       <div className="lg:col-span-7 relative bg-gradient-to-b from-white/[0.03] to-transparent rounded-[3rem] border border-white/5 overflow-hidden backdrop-blur-xl group">
         <AnimatePresence mode="wait">
           <motion.div
@@ -67,30 +53,20 @@ export default function TerminalClient({ trades = [], locale }: { trades: TradeL
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.1 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6 }}
             className="w-full h-full p-10"
           >
-            {/* ✅ 核心修复：在这里也补上了 locale={locale} */}
             <TradeCardCinematic trade={selectedTrade} locale={locale} />
           </motion.div>
         </AnimatePresence>
-        
-        <div className="absolute top-10 left-10 pointer-events-none opacity-20">
-          <div className="text-[10px] font-mono text-white tracking-[0.5em] mb-1">STATION_ID // WS-TERM-04</div>
-          <div className="h-px w-20 bg-gradient-to-r from-cyan-500 to-transparent" />
-        </div>
       </div>
 
-      {/* 右侧详情：垂直排版 (col-span-4) */}
       <div className="lg:col-span-4 p-16 flex flex-col justify-center bg-zinc-950/50 rounded-[3rem] border border-white/5 shadow-2xl relative overflow-hidden">
-        <div className="absolute -top-24 -right-24 w-64 h-64 bg-cyan-500/5 blur-[100px] rounded-full" />
-        
         <AnimatePresence mode="wait">
           <motion.div
             key={`data-${selectedTrade.id}`}
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
             className="space-y-12 relative z-10"
           >
             <div className="space-y-2">
@@ -122,11 +98,8 @@ export default function TerminalClient({ trades = [], locale }: { trades: TradeL
               </p>
             </div>
 
-            <div className="pt-8">
-              <h3 className="text-[10px] font-mono text-cyan-500/40 uppercase tracking-[0.3em] mb-5">/ Strategy_Intelligence</h3>
-              <p className="text-zinc-400 leading-relaxed font-light italic text-lg border-l-2 border-cyan-500/20 pl-6">
-                "{selectedTrade.description[currentLocale]}"
-              </p>
+            <div className="pt-8 text-zinc-400 leading-relaxed font-light italic text-lg border-l-2 border-cyan-500/20 pl-6">
+               "{selectedTrade.description[currentLocale]}"
             </div>
           </motion.div>
         </AnimatePresence>
