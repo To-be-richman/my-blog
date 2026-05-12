@@ -1,12 +1,14 @@
+// lib/trades.ts - 最終完整無損版本
+
 export interface TradeLog {
   id: string;
   slug: string;
   date: string;
-  pair: string;          
-  market: 'SPOT' | 'CONTRACT'; 
-  type: 'LONG' | 'SHORT'; 
-  profit: string;        
-  leverage: string;      
+  pair: string;          // 交易商品 (如 BTC/USDT)
+  market: 'SPOT' | 'CONTRACT'; // 交易類型 (SPOT/CONTRACT)
+  type: 'LONG' | 'SHORT'; // 交易方向
+  profit: string;        // 盈利比
+  leverage: string;      // 槓桿
   entryPrice: string;    
   exitPrice: string;
   strategy: {
@@ -43,7 +45,6 @@ export const trades: TradeLog[] = [
       tw: "突破回踩確認",
       jp: "ブレイクアウト確認"
     },
-    // ✅ 已修正為 trade-1.png
     screenshots: {
       en: "/images/trades/trade-1.png",
       tw: "/images/trades/trade-1.png",
@@ -71,16 +72,15 @@ export const trades: TradeLog[] = [
       tw: "高位縮量假突破",
       jp: "レジスタンス拒絶"
     },
-    // ✅ 已修正為 trade-2.png
     screenshots: {
       en: "/images/trades/trade-2.png",
       tw: "/images/trades/trade-2.png",
       jp: "/images/trades/trade-2.png"
     },
     description: {
-      en: "Failed to hold above 3,200 level. Entered short on the breakdown of the 1H trendline with bearish divergence on RSI. The target was the previous daily support level which was reached with high momentum.",
-      tw: "ETH 無法企穩在 3,200 點上方，並在跌破小時級別上升趨勢線後果斷開空，同時觀察到 RSI 出現看跌背離信號。盈利目標設定在前一個日線級別支撐位，並以強勁動能達成目標。",
-      jp: "3,200レベルを維持できず、1時間足のトレンドラインを割り込んだところでショートエントリー。RSIで弱気のダイバージェンスも確認。ターゲットは前日の日次サポートレベルに設定され、強い勢いで到達しました。"
+      en: "Failed to hold above 3,200 level. Entered short on the breakdown of the 1H trendline with bearish divergence on RSI.",
+      tw: "ETH 無法企穩在 3,200 點上方，並在跌破小時級別上升趨勢線後果斷開空，同時觀察到 RSI 出現看跌背離信號。",
+      jp: "3,200レベルを維持できず、1時間足のトレンドラインを割り込んだところでショートエントリー。RSIで弱気のダイバージェンスも確認されました。"
     }
   },
   {
@@ -99,7 +99,6 @@ export const trades: TradeLog[] = [
       tw: "趨勢跟蹤策略",
       jp: "トレンドフォロー"
     },
-    // ✅ 已修正為 trade-3.png
     screenshots: {
       en: "/images/trades/trade-3.png",
       tw: "/images/trades/trade-3.png",
