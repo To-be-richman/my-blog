@@ -5,10 +5,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import SearchModal from "@/components/SearchModal";
-// ✅ 引入进度条组件
 import ReadingProgress from "./ReadingProgress";
 
-// ... localizedPosts 数据保持不变 ...
 const localizedPosts = {
   en: [
     { slug: "ai-semiconductor", title: "AI & Semiconductor Strategy", excerpt: "How AI is reshaping the semiconductor industry.", category: "Technology" },
@@ -31,6 +29,24 @@ export default function Navbar() {
   const locale = useLocale();
   const t = useTranslations("Home");
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // 辅助函数：渲染带呼吸灯的链接
+  const NavLink = ({ href, label, isMobile = false }: { href: string; label: string; isMobile?: boolean }) => (
+    <Link 
+      href={`/${locale}${href}`} 
+      onClick={() => isMobile && setMenuOpen(false)}
+      className={isMobile 
+        ? "text-3xl font-semibold text-white relative" 
+        : "text-sm text-white/70 transition hover:text-white relative group"
+      }
+    >
+      {label}
+      {/* 如果是 Terminal 链接，增加一个青色呼吸灯特效 */}
+      {href === "/terminal" && (
+        <span className={`absolute ${isMobile ? "-top-1 -right-4 h-2 w-2" : "-top-1 -right-2 h-1.5 w-1.5"} rounded-full bg-cyan-500 animate-pulse`} />
+      )}
+    </Link>
+  );
 
   return (
     <>
@@ -67,15 +83,11 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-10">
-            <Link href={`/${locale}/articles`} className="text-sm text-white/70 transition hover:text-white">
-              {t("navArticles")}
-            </Link>
-            <Link href={`/${locale}/notes`} className="text-sm text-white/70 transition hover:text-white">
-              {t("navNotes")}
-            </Link>
-            <Link href={`/${locale}/about`} className="text-sm text-white/70 transition hover:text-white">
-              {t("navAbout")}
-            </Link>
+            <NavLink href="/articles" label={t("navArticles")} />
+            <NavLink href="/notes" label={t("navNotes")} />
+            {/* ✅ 新增：交易执行终端入口 */}
+            <NavLink href="/terminal" label={t("navTerminal")} /> 
+            <NavLink href="/about" label={t("navAbout")} />
           </nav>
 
           {/* Right */}
@@ -88,10 +100,10 @@ export default function Navbar() {
             </div>
 
             {/* Languages */}
-            <div className="hidden md:flex items-center gap-4 text-sm">
+            <div className="hidden md:flex items-center gap-4 text-sm font-mono">
               <Link href="/en" className={`transition hover:text-white ${locale === "en" ? "text-white" : "text-white/60"}`}>EN</Link>
-              <Link href="/tw" className={`transition hover:text-white ${locale === "tw" ? "text-white" : "text-white/60"}`}>繁體中文</Link>
-              <Link href="/jp" className={`transition hover:text-white ${locale === "jp" ? "text-white" : "text-white/60"}`}>日本語</Link>
+              <Link href="/tw" className={`transition hover:text-white ${locale === "tw" ? "text-white" : "text-white/60"}`}>繁中</Link>
+              <Link href="/jp" className={`transition hover:text-white ${locale === "jp" ? "text-white" : "text-white/60"}`}>JP</Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -106,13 +118,13 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* ✅ 进度条核心优化：吸附在 header 底部 */}
+        {/* 进度条：吸附在 header 底部 */}
         <div className="absolute bottom-0 left-0 w-full h-[2px] z-50">
           <ReadingProgress />
         </div>
       </header>
 
-      {/* Mobile Menu 内容保持不变... */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -120,18 +132,20 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-black/90 backdrop-blur-3xl"
+            className="fixed inset-0 z-40 bg-black/95 backdrop-blur-3xl"
           >
-            <div className="flex flex-col items-center justify-center h-full gap-10">
-              <Link href={`/${locale}/articles`} onClick={() => setMenuOpen(false)} className="text-3xl font-semibold text-white">
-                {t("navArticles")}
-              </Link>
-              <Link href={`/${locale}/notes`} onClick={() => setMenuOpen(false)} className="text-3xl font-semibold text-white">
-                {t("navNotes")}
-              </Link>
-              <Link href={`/${locale}/about`} onClick={() => setMenuOpen(false)} className="text-3xl font-semibold text-white">
-                {t("navAbout")}
-              </Link>
+            <div className="flex flex-col items-center justify-center h-full gap-12">
+              <NavLink href="/articles" label={t("navArticles")} isMobile />
+              <NavLink href="/notes" label={t("navNotes")} isMobile />
+              <NavLink href="/terminal" label={t("navTerminal")} isMobile />
+              <NavLink href="/about" label={t("navAbout")} isMobile />
+              
+              {/* Mobile Language Switcher */}
+              <div className="flex gap-8 mt-8 font-mono text-sm">
+                <Link href="/en" onClick={() => setMenuOpen(false)} className="text-white/50">EN</Link>
+                <Link href="/tw" onClick={() => setMenuOpen(false)} className="text-white/50">TW</Link>
+                <Link href="/jp" onClick={() => setMenuOpen(false)} className="text-white/50">JP</Link>
+              </div>
             </div>
           </motion.div>
         )}
