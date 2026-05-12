@@ -9,7 +9,7 @@ export default function MarketTicker() {
         "tradingview_ticker"
       );
 
-    // 防止重复加载
+    // 防止重複加載
     if (
       !container ||
       container.hasChildNodes()
@@ -30,6 +30,7 @@ export default function MarketTicker() {
 
     script.async = true;
 
+    // ✅ 這裡精確拼接你提供的第二段 JSON，並修復了括號閉合
     script.innerHTML = `
       {
         "symbols": [
@@ -76,14 +77,8 @@ export default function MarketTicker() {
           {
             "proName": "FX_IDC:USDJPY",
             "title": "USD/JPY"
-          },
-
-          {
-            "proName": "FX:JPYUSD",
-            "title": "JPY/USD"
           }
         ],
-
         "showSymbolLogo": true,
 
         "isTransparent": true,
