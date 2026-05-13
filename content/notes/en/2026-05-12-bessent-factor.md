@@ -4,7 +4,6 @@ category: "Macro"
 date: "2026-05-12"
 ---
 
-### English
 
 The Nikkei is hovering at the 60,000 handle, but the focus has shifted from internal momentum to external friction.
 

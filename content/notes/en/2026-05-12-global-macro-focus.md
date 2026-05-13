@@ -4,7 +4,6 @@ category: "Macro"
 date: "2026-05-12"
 ---
 
-### English
 
 The global market is witnessing a decadal shift in pricing power. The focus has moved from "Digital Hype" to "Real Cash Flow" as capital rotates out of speculative assets into tangibles.
 
