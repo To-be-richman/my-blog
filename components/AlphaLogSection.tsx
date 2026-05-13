@@ -1,79 +1,123 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import Link from "next/link";
+import React, { useState } from "react";
+import Link from "next/link"; // 👈 導入路由跳轉組件
+import TradeCardCinematic from "./TradeCardCinematic";
 import { TradeLog } from "@/lib/trades";
-import { motion } from "framer-motion";
-
-// 動態加載 3D 渲染引擎
-const TradeCardCinematic = dynamic(() => import("./TradeCardCinematic"), { 
-  ssr: false,
-  loading: () => <div className="h-[400px] w-full bg-zinc-900/10 animate-pulse rounded-2xl" />
-});
 
 export default function AlphaLogSection({ trade, locale }: { trade: TradeLog, locale: string }) {
-  // ✅ 完善三語翻譯詞典
-  const dict = {
-    en: {
-      label: "Featured Execution",
-      button: "View Master Trades"
-    },
-    tw: {
-      label: "精選執行記錄",
-      button: "查看大師實盤"
-    },
-    jp: {
-      label: "注目トレード",
-      button: "マスター・トレードを表示"
-    }
-  };
+  const [activeStep, setActiveStep] = useState(0);
+  const currentLocale = (locale === 'en' || locale === 'tw' || locale === 'jp' ? locale : 'en') as 'en' | 'tw' | 'jp';
 
-  const t = dict[locale as keyof typeof dict] || dict.en;
+  const labels = {
+    en: { asset: "ASSET", market: "TYPE", type: "DIR", profit: "ROI", strategy: "STRATEGY", step: "STEP", viewMore: "VIEW_MORE_DETAILS //" },
+    tw: { asset: "資產", market: "類型", type: "方向", profit: "盈利率", strategy: "戰略要領", step: "步驟", viewMore: "查看更多詳細記錄 //" },
+    jp: { asset: "資産", market: "タイプ", type: "方向", profit: "騰落率", strategy: "戦略要領", step: "ステップ", viewMore: "詳細データを表示 //" }
+  }[currentLocale];
+
+  const currentStepDetail = trade.stepDescriptions?.[activeStep] || trade.stepDescriptions;
+
+  const marketMap = { SPOT: { en: "SPOT", tw: "現貨", jp: "現物" }, CONTRACT: { en: "PERP", tw: "合約", jp: "先物" }, OPTION: { en: "OPTION", tw: "期權", jp: "オプション" } };
+  const typeMap = { LONG: { en: "LONG", tw: "看漲", jp: "ロング" }, SHORT: { en: "SHORT", tw: "看跌", jp: "ショート" }, UP: { en: "UP", tw: "看漲", jp: "UP" }, DOWN: { en: "DOWN", tw: "看跌", jp: "DOWN" } };
 
   return (
-    <section className="relative z-10 max-w-3xl mx-auto px-6 py-20 border-t border-zinc-900/30">
-      <div className="flex flex-col items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full max-w-7xl mx-auto px-6 py-12 items-center bg-black">
+      
+      {/* 🟢 左側：3D 智慧屏區域 */}
+      <div className="h-[550px] w-full relative">
+        <TradeCardCinematic 
+          trade={trade} 
+          locale={locale} 
+          onStepChange={(step) => setActiveStep(step)} 
+        />
+      </div>
+
+      {/* 🟢 右側：全新重構——金屬拉絲銘牌、字體放大與查看詳情按鈕復位面板 */}
+      <div className="flex flex-col space-y-4 text-gray-200 font-mono tracking-wide bg-[#060606] border border-white/5 p-8 rounded-lg shadow-2xl">
         
-        {/* 1. 頂部標籤 - 已實現多語言 */}
-        <div className="flex flex-col items-center space-y-3 mb-12">
-          <span className="text-[10px] font-bold text-zinc-600 uppercase tracking-[0.3em]">
-            {t.label}
-          </span>
-          <div className="h-[1px] w-8 bg-zinc-800"></div>
+        {/* 🎫 Item 01: 資產 (升級為金屬拉絲微光背板) */}
+        <div className="flex items-center space-x-6 bg-gradient-to-r from-[#121212] to-[#181818] border border-white/5 p-4 rounded shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+          <div className="w-28 flex-shrink-0 bg-cyan-500/10 text-cyan-400 text-sm font-black px-3 py-2 rounded text-center tracking-widest border border-cyan-500/30">
+            {labels.asset}
+          </div>
+          {/* 字體放大：text-2xl */}
+          <div className="text-2xl font-black font-sans tracking-tight text-white uppercase">
+            {trade.pair.replace("/", "")}
+          </div>
         </div>
 
-        {/* 2. 核心 3D 展示區 */}
-        <motion.div 
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="relative w-full aspect-[3/4] md:aspect-square max-h-[500px] bg-gradient-to-b from-[#080808] to-transparent rounded-[2.5rem] overflow-hidden shadow-2xl"
-        >
-          <TradeCardCinematic trade={trade} locale={locale} />
-          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black to-transparent pointer-events-none" />
-        </motion.div>
+        {/* 🎫 Item 02: 類型 */}
+        <div className="flex items-center space-x-6 bg-gradient-to-r from-[#121212] to-[#181818] border border-white/5 p-4 rounded shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+          <div className="w-28 flex-shrink-0 bg-cyan-500/10 text-cyan-400 text-sm font-black px-3 py-2 rounded text-center tracking-widest border border-cyan-500/30">
+            {labels.market}
+          </div>
+          {/* 字體放大：text-lg */}
+          <div className="text-lg font-bold text-gray-100">
+            {marketMap[trade.market]?.[currentLocale] || trade.market}
+          </div>
+        </div>
 
-        {/* 3. 底部按鈕 - 已實現多語言 */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="mt-12"
-        >
-          <Link 
-            href={`/${locale}/terminal`} 
-            className="group flex flex-col items-center space-y-3"
-          >
-            <span className="text-[11px] font-semibold text-zinc-500 group-hover:text-white transition-colors uppercase tracking-[0.2em]">
-              {t.button}
-            </span>
-            <div className="relative w-12 h-px bg-zinc-800 overflow-hidden">
-               <div className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
+        {/* 🎫 Item 03: 方向 */}
+        <div className="flex items-center space-x-6 bg-gradient-to-r from-[#121212] to-[#181818] border border-white/5 p-4 rounded shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+          <div className="w-28 flex-shrink-0 bg-cyan-500/10 text-cyan-400 text-sm font-black px-3 py-2 rounded text-center tracking-widest border border-cyan-500/30">
+            {labels.type}
+          </div>
+          {/* 字體放大：text-lg */}
+          <div className="text-lg font-black tracking-wider color-change animate-pulse duration-1000 ${trade.type === 'UP' || trade.type === 'LONG' ? 'text-emerald-400' : 'text-rose-400'}">
+            {typeMap[trade.type]?.[currentLocale] || trade.type}
+          </div>
+        </div>
+
+        {/* 🎫 Item 04: 盈利率 */}
+        <div className="flex items-center space-x-6 bg-gradient-to-r from-[#121212] to-[#181818] border border-white/5 p-4 rounded shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+          <div className="w-28 flex-shrink-0 bg-cyan-500/10 text-cyan-400 text-sm font-black px-3 py-2 rounded text-center tracking-widest border border-cyan-500/30">
+            {labels.profit}
+          </div>
+          {/* 字體大幅度放大：text-3xl */}
+          <div className="text-3xl font-black font-mono text-emerald-400 tracking-tight">
+            {trade.profit}
+          </div>
+        </div>
+
+        {/* 🎫 Item 05: 戰略要領 */}
+        <div className="flex flex-col space-y-3 pt-2">
+          <div className="flex items-center justify-between">
+            <div className="w-28 bg-cyan-500/10 text-cyan-400 text-xs font-bold px-3 py-1.5 rounded text-center tracking-widest border border-cyan-500/30">
+              {labels.strategy}
             </div>
+            <div className="text-[10px] bg-white/5 px-2 py-1 rounded text-gray-400 border border-white/5">
+              {labels.step} <span className="text-cyan-400 font-bold">{activeStep + 1}</span> / 4
+            </div>
+          </div>
+          
+          <div className="bg-black/60 border border-white/5 rounded p-4 min-h-[110px] flex flex-col justify-between transition-all duration-300">
+            <div className="text-xs text-cyan-400/90 font-bold uppercase tracking-wider mb-2 font-sans">
+              &gt;&gt; {currentStepDetail.title[currentLocale]}
+            </div>
+            <p className="text-sm text-gray-300 leading-relaxed font-sans font-normal italic">
+              "{currentStepDetail.text[currentLocale]}"
+            </p>
+          </div>
+        </div>
+
+        {/* 🚀 核心復位：查看更多詳細記錄按鈕區域 */}
+        <div className="pt-2">
+          <Link 
+             href={`/${locale}/terminal`}// 🎯 精準對齊您之前的 Terminal 路由與動態 Slug
+            className="flex items-center justify-center w-full bg-gradient-to-b from-[#161616] to-[#0d0d0d] hover:from-[#222] hover:to-[#121212] border border-white/10 hover:border-cyan-500/40 text-xs font-bold text-gray-400 hover:text-cyan-400 py-3 rounded tracking-widest transition-all duration-300 shadow-[0_4px_12px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(0,255,255,0.08)]"
+          >
+            {labels.viewMore}
           </Link>
-        </motion.div>
+        </div>
+
+        {/* 底條 */}
+        <div className="flex justify-between items-center text-[9px] text-white/10 pt-1 font-mono uppercase tracking-widest">
+          <span>DATE: {trade.date}</span>
+          <span>MASTER TRADES ARCHIVE</span>
+        </div>
 
       </div>
-    </section>
+
+    </div>
   );
 }

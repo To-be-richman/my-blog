@@ -1,6 +1,6 @@
 ---
 title: "大重新定價時代：回歸真實新金流"
-category: "宏觀"
+category: "Macro"
 date: "2026-05-12"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "大再評価時代：実質キャッシュフローへの回帰"
-category: "マクロ"
+category: "Macro"
 date: "2026-05-12"
 ---
 
