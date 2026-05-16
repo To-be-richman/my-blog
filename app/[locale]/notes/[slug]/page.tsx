@@ -4,8 +4,8 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { notFound } from "next/navigation";
-import Newsletter from "@/components/Newsletter"; // 保留您原本的訂閱組件
-import CopyLinkButton from "@/components/CopyLinkButton"; // 引入我們做好的支援多語言社交分享面板
+import Newsletter from "@/components/Newsletter"; 
+import CopyLinkButton from "@/components/CopyLinkButton"; // ✅ 完美引入極簡複製組件
 
 export default async function NotePage({
   params,
@@ -17,11 +17,9 @@ export default async function NotePage({
 }) {
   const { locale, slug } = await params;
 
-  // 1. 嚴格限定詳情頁的檔案讀取路徑
   const notesDirectory = path.join(process.cwd(), "content/notes", locale);
   const fullPath = path.join(notesDirectory, `${slug}.md`);
 
-  // 2. 只有當真實的文章 md 檔案確實不存在時，才拋出 404
   if (!fs.existsSync(fullPath)) {
     notFound();
   }
@@ -49,12 +47,12 @@ export default async function NotePage({
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
         
-        {/* ✨ 在正文結束後、電子報訂閱欄出現前，安全掛載多語言分享面板 */}
+        {/* ✨ 在正文結束後、訂閱欄出現前，安全掛載極簡多語言複製按鈕 */}
         <div className="max-w-4xl mx-auto">
-          <CopyLinkButton title={data.title} locale={locale} />
+          <CopyLinkButton locale={locale} />
         </div>
         
-        {/* 掛載您原本的電子報訂閱組件 */}
+        {/* 掛載訂閱組件 */}
         <div className="max-w-4xl mx-auto mt-20">
            <Newsletter />
         </div>
