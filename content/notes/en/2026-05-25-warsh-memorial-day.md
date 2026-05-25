@@ -1,5 +1,5 @@
 ---
-title: "NOTES | Warsh Is In. Now the Data Speaks."
+title: "Warsh Is In. Now the Data Speaks."
 category: "MACRO"
 tags: ["Federal Reserve", "Warsh Era", "Core PCE"]
 date: "2026-05-25"
