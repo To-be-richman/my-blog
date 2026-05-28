@@ -2,7 +2,7 @@
 title: "原油急落に沸く市場、その裏でゲームの規則を静かに変えた米連邦準備制度（FRB）の切り札"
 category: "MACRO"
 date: "2026-05-22"
-coverImage: "/images/fed-rules-jp.jpg"
+coverImage: "/images/fed-rules.jpg"
 ---
 
 ここ数日の世界的な資金流動性モニタリングを見ると、地政学的リスクの恐れに端を発した市場の追随買い熱は目に見えて減退し、売り買いが激しく交錯した後の合理的な再評価へとシフトしています。

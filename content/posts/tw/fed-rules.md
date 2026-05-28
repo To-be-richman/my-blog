@@ -2,7 +2,7 @@
 title: "當所有人在慶祝油價暴跌，美聯儲的底牌已經悄悄改變了遊戲規則"
 category: "MACRO"
 date: "2026-05-22"
-coverImage: "/images/fed-rules-tw.jpg"
+coverImage: "/images/fed-rules.jpg"
 ---
 
 這幾天緊盯著屏幕上的全球資金流向監測，前一段時間由地緣政治恐慌引發的追高熱潮已顯著降溫，取而代之的是市場在多空博弈後的理性重估。
