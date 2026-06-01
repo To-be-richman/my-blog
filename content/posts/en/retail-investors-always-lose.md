@@ -1,7 +1,7 @@
 ---
 title: "Why Do Retail Investors Always Lose? A Self-Dissection from Psychology to Asset Allocation"
 excerpt: "Losing money in the stock market is rarely because the market makers are too ruthless; it's because retail investors are devouring their own principal, bite by bite. Investing is a full-scale psychological war against yourself."
-date: "2026-05-08"
+date: "2026-06-01"
 coverImage: "/images/investors .jpg"
 category: "MACRO"
 ---

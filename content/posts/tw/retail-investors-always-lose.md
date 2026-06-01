@@ -1,7 +1,7 @@
 ---
 title: "散戶為什麼總是輸？從心理到資產選擇的自我拆解"
 excerpt: "在股市裡虧錢，往往不怪莊家太狠，而是散戶自己在一口一口吃掉自己的本金。投資是一場全方位的自我博弈。"
-date: "2026-05-08"
+date: "2026-06-01"
 coverImage: "/images/investors.jpg"
 category: "MACRO"
 ---
