@@ -1,5 +1,5 @@
 ---
-title: "June 2026 Macro Review: Stretched Highs & The Liquidity Tug-of-War"
+title: "Stretched Highs & The Liquidity Tug-of-War"
 category: "MACRO"
 date: "2026-06-02"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "June 2026 Macro Review: 上値の重さと資金流動性の綱引き"
+title: "上値の重さと資金流動性の綱引き"
 category: "MACRO"
 date: "2026-06-02"
 ---

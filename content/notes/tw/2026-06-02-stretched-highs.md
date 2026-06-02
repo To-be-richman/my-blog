@@ -1,5 +1,5 @@
 ---
-title: "June 2026 Macro Review: 高檔震盪與資金流向的拉鋸戰"
+title: "高檔震盪與資金流向的拉鋸戰"
 category: "MACRO"
 date: "2026-06-02"
 ---
