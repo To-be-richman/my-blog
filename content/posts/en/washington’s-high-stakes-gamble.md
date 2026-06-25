@@ -1,12 +1,12 @@
 ---
-title: "Washington’s High-Stakes Gamble: Why Trump Froze His Pen on the Housing Bill at the Eleventh Hour?"
+title: "Washington’s High-Stakes Gamble: Why Trump Froze His Pen on the Housing Bill"
 excerpt: "Billed as a historic housing reform with rare bipartisan support, the 21st Century ROAD to Housing Act was frozen by Trump just hours before the signing ceremony. Behind the frozen pen lies Washington's most high-stakes political thriller of the season."
 date: "2026-06-25"
 coverImage: "/images/washington-housing.jpg"
 category: "MACRO"
 ---
 
-# Washington’s High-Stakes Gamble: Why Trump Froze His Pen on the Housing Bill at the Eleventh Hour?
+# Washington’s High-Stakes Gamble: Why Trump Froze His Pen on the Housing Bill
 
 In a deeply polarized contemporary Washington, the Senate’s 85-5 landslide and the House’s 358-32 overwhelming majority to pass a single bill is nothing short of a political miracle. Jointly spearheaded by Republican Senator Tim Scott and Democratic Senator Elizabeth Warren across ideological divides, the *21st Century ROAD to Housing Act* has been hailed by major media outlets as the most significant housing reform in three decades.
 
