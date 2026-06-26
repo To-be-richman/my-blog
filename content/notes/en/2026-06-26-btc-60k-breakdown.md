@@ -1,5 +1,6 @@
 ---
-title: "Bitcoin's \$60K Breakdown: The Bipartisan Liquidity Squeeze and AI Capital Bleed"
+title: 'Bitcoin's $60K Breakdown: The Bipartisan Liquidity Squeeze and AI Capital Bleed'
+
 category: "Crypto"
 date: "2026-06-26"
 ---
