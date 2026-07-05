@@ -1,6 +1,5 @@
 ---
 title: 'The TD9 Exhaustion Signal: Monthly Capitulation Dynamics and the Mid-Cycle Bottoming Paradox'
-slug: "btc-td9-monthly-exhaustion-bottoming-signal"
 category: "CRYPTO"
 date: "2026-07-05"
 ---

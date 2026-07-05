@@ -1,6 +1,5 @@
 ---
 title: 'ビットコイン6万ドル割れ：マクロ引き締めとAIセクターへの資金流出'
-slug: "bitcoins-60k-breakdown"
 category: "CRYPTO"
 date: "2026-06-26"
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Tether 市值超越以太坊：資金向穩定幣的宏觀轉移與去中心化永續合約收益的崛起'
-slug: "usdt-flips-eth-liquidity-shift"
+
 category: "CRYPTO"
 date: "2026-06-26"
 ---

@@ -1,6 +1,6 @@
 ---
 title: '國家戰略與個人資產的終極同盟：川普 927 頁財務披露掀起的「加密政治經濟學」範式轉移'
-slug: "trump-crypto-disclosure-narrative-shift-tw"
+
 category: "MACRO"
 date: "2026-07-01"
 ---

@@ -1,6 +1,5 @@
 ---
 title: 'The Saylor Paradox: Preferred Stock Dislocation and the Looming Collapse of the Corporate Bitcoin Narrative'
-slug: "mstr-leverage-trap-narrative-collapse"
 category: "CRYPTO"
 date: "2026-06-26"
 ---

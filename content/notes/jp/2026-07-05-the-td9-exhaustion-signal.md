@@ -1,6 +1,6 @@
 ---
 title: 'TD9エグゾースト・シグナル：月足のパニック売りダイナミクスと中期築底のパラドックス'
-slug: "btc-td9-monthly-exhaustion-bottoming-signal-jp"
+
 category: "CRYPTO"
 date: "2026-07-05"
 ---

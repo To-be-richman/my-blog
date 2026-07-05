@@ -1,6 +1,5 @@
 ---
 title: 'Tether Overtakes Ethereum: The Macro Flight to Stablecoins and the Rise of Perp DEX Yields'
-slug: "usdt-flips-eth-liquidity-shift"
 category: "CRYPTO"
 date: "2026-06-26"
 ---

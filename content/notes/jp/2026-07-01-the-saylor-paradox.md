@@ -1,6 +1,5 @@
 ---
 title: 'セイラー・パラドックス：優先株の価格歪みと企業ビットコイン叙事詩の終焉リスク'
-slug: "mstr-leverage-trap-narrative-collapse-jp"
 category: "CRYPTO"
 date: "2026-06-26"
 ---

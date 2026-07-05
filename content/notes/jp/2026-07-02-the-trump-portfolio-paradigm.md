@@ -1,6 +1,6 @@
 ---
 title: '国家戦略と個人資産の融合：トランプ大統領927ページ開示がもたらす「暗号資産政治学」の地殻変動'
-slug: "trump-crypto-disclosure-narrative-shift-jp"
+
 category: "MACRO"
 date: "2026-07-01"
 ---

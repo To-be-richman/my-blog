@@ -1,6 +1,6 @@
 ---
 title: '比特幣跌破 6 萬美元：流動性雙重擠壓與 AI 資金抽血'
-slug: "bitcoins-60k-breakdown"
+
 category: "CRYPTO"
 date: "2026-06-26"
 ---

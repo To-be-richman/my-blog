@@ -1,6 +1,5 @@
 ---
 title: 'The Trump Portfolio Paradigm: Institutional Realignment and the Institutionalization of the Crypto-Politics Narrative'
-slug: "trump-crypto-disclosure-narrative-shift-en"
 category: "MACRO"
 date: "2026-07-01"
 ---

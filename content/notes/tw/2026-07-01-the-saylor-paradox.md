@@ -1,6 +1,6 @@
 ---
 title: '塞勒悖論：優先股價格脫鉤與企業比特幣核心敘事即將崩塌的終極考驗'
-slug: "mstr-leverage-trap-narrative-collapse-tw"
+
 category: "CRYPTO"
 date: "2026-06-26"
 ---

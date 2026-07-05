@@ -1,6 +1,5 @@
 ---
 title: 'Tetherがイーサリアムを逆転：マクロ資金のステーブルコイン避難とPerp DEX利回りの台頭'
-slug: "usdt-flips-eth-liquidity-shift"
 category: "CRYPTO"
 date: "2026-06-26"
 ---

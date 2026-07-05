@@ -1,6 +1,5 @@
 ---
 title: 'TD9 動能耗盡訊號：月線恐慌清算動力學與中期築底構築的週期悖論'
-slug: "btc-td9-monthly-exhaustion-bottoming-signal-tw"
 category: "CRYPTO"
 date: "2026-07-05"
 ---
