@@ -1,5 +1,5 @@
 ---
-title: "BitMEX閉鎖：市場統合とデリバティブの二重構造"
+title: 'BitMEX閉鎖：市場統合とデリバティブの二重構造'
 date: 2026-07-24
 category: "Crypto"
 ---

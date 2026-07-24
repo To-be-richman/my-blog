@@ -1,5 +1,5 @@
 ---
-title: "BitMEX 關閉：市場整合與衍生品的雙軌未來"
+title: 'BitMEX 關閉：市場整合與衍生品的雙軌未來'
 date: 2026-07-24
 category: "Crypto"
 ---

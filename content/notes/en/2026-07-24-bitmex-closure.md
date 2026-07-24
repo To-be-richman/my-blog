@@ -1,5 +1,5 @@
 ---
-title: "BitMEX Closure: Market Consolidation and the Dual Track Future of Derivatives"
+title: 'BitMEX Closure: Market Consolidation and the Dual Track Future of Derivatives'
 date: 2026-07-24
 category: "Crypto"
 ---
